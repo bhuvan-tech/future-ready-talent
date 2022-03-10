@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Luxurious+Roman&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 0 4.8rem;
+  height: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5fafe;
+}
+
+.header h1{
+  color: #3b50df;
+}
+
+.header .logo {
+  height: 3rem;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #212529;
+  transition: all 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: #3b50df;
+}
+
+.mobile-navbar-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #212529;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* ===========================================
+Hero and Service Section Start
+======================================= */
+.section-hero,
+.section-services {
+  padding: 7.8rem 0;
+  background-color: #f5fafe;
+  height: 90vh;
+  padding: 0 4.4rem;
+  display: flex;
+  align-items: center;
+}
+
+
+.section-services {
+  background: #f5fafe;
+  
+
+
+}
+
+.section-hero p,
+.section-services p {
+  font-size: 3.2rem;
+}
+
+.left{
+  max-width: 50vw;
+  background: #f5fafe;
+  min-height: 70vh;
+  font-size: 10rem;
+  font-family: 'League Gothic', sans-serif;
+  
+}
+
+.smallleft{
+  font-size: 2.3rem;
+  color: grey;
+  padding-top: 0.5rem;
+}
+.right{
+  margin-left: 0.4rem;
+}
+.right-service{
+  margin-top: 125px;
+}
+.hero{
+  display: flex;
+  padding-left: 30px;
+  
+}
+.box{
+  min-width: 28vw;
+  min-height: 20vh;
+  background-color:grey;
+  font-size: 2.5rem;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.box:hover{
+  color:#f5fafe;
+  background:#3b50df;
+  text-decoration: none;
+}
+
+/* ===========================================
+Responsive Codes 
+======================================= */
+
+/* 980px  */
+@media (max-width: 62em) {
+  .mobile-navbar-btn {
+    display: block;
+    z-index: 999;
+    border: 3px solid #212529;
+    color: #212529;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header .logo {
+    width: 40%;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 100vh;
+    background: #e7f5ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+}
+@media (max-width: 35em) {
+  .header {
+    padding: 0 2.4rem;
+  }
+
+  .header .logo {
+    width: 60%;
+  }
+}
