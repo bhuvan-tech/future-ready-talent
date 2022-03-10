@@ -17,7 +17,7 @@ nav{
 }
 nav div a{
     text-decoration: none;
-    font-size: 24px !important;
+    font-size: 2rem !important;
     font-weight: bold;
 }
 
@@ -46,11 +46,26 @@ ul li a{
     font-weight: 600;
 }
 
-div.section1{
-    padding: 25px;
+#signout{
+    text-decoration: none;
+    background-color: #3b50df;
+    color: #fff;
+    padding: 10px;
+    height: 35px;
+    width: 83px;
+    border-radius: 4px;
+}
+ 
+div.section1, div.section2{
+    padding: 5% 10%;
+    width:80%;
 }
 
-div.section1 h2, div.section1 p{
+div.section1 h2,div.section2 h2#gry{
+    font-size: 2rem;
+}
+
+div.section1 h2, div.section1 p,div.section2 h2, div.section2 p{
     padding: 1% 0%;
 }
 
@@ -63,11 +78,47 @@ div.blocks{
 }
 
 div.block1{
-    margin: 0 1% 0 0;
-    border: rgb(180, 180, 180) solid 1px;
+    margin: 0 3% 5% 0;
+    /* border: rgb(136, 135, 135) solid 1px; */
+    box-shadow: 0 0 8px grey;
+    width: 330px;
 }
 
 div.block1 img{
-    height: 150px;
-    width: 250px;
+    height: 200px;
+    width: 330px;
+    /* height: 100%;
+    width: 100%; */
 }
+
+
+div.block1 div.belowimage div h3{
+    padding:2% 5%;
+}
+
+div.block1 div.belowimage div.withpara p{
+    padding: 0% 0% 5% 5%;
+    font-weight: 500;
+}
+
+div.block1 div.belowimage div.withsmall p{
+    padding:0% 5%;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.price{
+    padding:2% 5%;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul{
+        display: none;
+    }
+
+    div.blocks{
+        display: flex;
+        flex-direction: column;
+    }
+  }
