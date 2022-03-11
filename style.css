@@ -147,7 +147,7 @@ Responsive Codes
 ======================================= */
 
 /* 980px  */
-@media (max-width: 62em) {
+@media (max-width: 1080px) {
   .mobile-navbar-btn {
     display: block;
     z-index: 999;
@@ -175,8 +175,7 @@ Responsive Codes
     justify-content: center;
     align-items: center;
 
-    transform: translateX(100%);
-    transition: all 0.5s linear;
+    
 
     opacity: 0;
     visibility: hidden;
@@ -194,7 +193,10 @@ Responsive Codes
     visibility: visible;
     pointer-events: auto;
   }
-
+  .section-hero p,
+ .section-services p {
+  font-size: 2.5rem;
+}
   .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
     display: block;
   }
