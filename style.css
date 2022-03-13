@@ -56,7 +56,7 @@ li:visited{
     display: flex;
 }
 .left{
-<<<<<<< HEAD
+
   max-width: 50vw;
   background: #f5fafe;
   min-height: 70vh;
@@ -68,16 +68,13 @@ li:visited{
 .smallleft{
   font-size: 2.3rem;
   color: grey;
-  padding-top: 0.5rem;
-=======
-    
+  padding-top: 0.5rem;  
     background: #f5fafe;
     font-family: 'League Gothic', sans-serif;
     min-height: 100vh;
     min-width: 50vw;
     font-size: 100px;
     padding: 50px 15px 20px 30px;
->>>>>>> 598b7107601d86b3d7523d360e2ba0310d1576b1
 }
 .right{
     background-color: #f5fafe;
@@ -133,7 +130,7 @@ li:visited{
     font-size: 40px;
     font-weight: 300px;
 }
-<<<<<<< HEAD
+
 @media (max-width: 35em) {
   .header {
     padding: 0 2.4rem;
@@ -151,10 +148,6 @@ right:-0.5em;
 top:57em ;
 cursor: pointer;
 }
-/* #botid{
-  display: none;
-} */
-
 .bot{
   
   width: 40em;
@@ -166,5 +159,4 @@ cursor: pointer;
   border-radius: 1em;
   opacity: 0.8;
 }
-=======
->>>>>>> 598b7107601d86b3d7523d360e2ba0310d1576b1
+
