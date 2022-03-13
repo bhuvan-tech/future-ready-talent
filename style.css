@@ -1,216 +1,120 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Luxurious+Roman&display=swap');
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
+body{
+    background-color: #f5fafe;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    min-height: 5vh;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 15px;
+    font-family: "Work Sans", sans-serif;
+    background-color: #f5fafe;
+}
+.logo{
+    color: #3b50df;
+    font-weight: 550;
+    padding-left: 10px;
+}
+ul {
+    display: inline;
+    list-style: none;
+    margin: 0 20px;
+    
 }
 
-body {
-  overflow-x: hidden;
+li{
+    display: inline-block;
+    margin: 0 20px;
+    
 }
 
-.header {
-  padding: 0 4.8rem;
-  height: 9rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f5fafe;
+li a{
+    text-decoration: none;
 }
 
-.header h1{
-  color: #3b50df;
-}
-
-.header .logo {
-  height: 3rem;
-}
-
-.navbar-list {
-  display: flex;
-  gap: 4.8rem;
-  list-style: none;
-}
-
-.navbar-link:link,
-.navbar-link:visited {
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #212529;
-  transition: all 0.3s;
-}
-
-.navbar-link:hover,
-.navbar-link:active {
-  color: #3b50df;
-}
-
-.mobile-navbar-btn {
-  display: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.mobile-nav-icon {
-  width: 4rem;
-  height: 4rem;
-  color: #212529;
-}
-
-.mobile-nav-icon[name="close-outline"] {
-  display: none;
-}
-
-/* ===========================================
-Hero and Service Section Start
-======================================= */
-.section-hero,
-.section-services {
-  padding: 7.8rem 0;
-  background-color: #f5fafe;
-  height: 90vh;
-  padding: 0 4.4rem;
-  display: flex;
-  align-items: center;
+li a:visited{
+    color: #000;
+    transition: all 0.3s;
 }
 
 
-.section-services {
-  background: #f5fafe;
-  
-
-
+li a:hover,
+li:visited{
+    color: #3b50df;
 }
-
-.section-hero p,
-.section-services p {
-  font-size: 3.2rem;
+.container{
+    display: flex;
 }
-
 .left{
-  max-width: 50vw;
-  background: #f5fafe;
-  min-height: 70vh;
-  font-size: 10rem;
-  font-family: 'League Gothic', sans-serif;
-  
-}
-
-.smallleft{
-  font-size: 2.3rem;
-  color: grey;
-  padding-top: 0.5rem;
+    
+    background: #f5fafe;
+    font-family: 'League Gothic', sans-serif;
+    min-height: 100vh;
+    min-width: 50vw;
+    font-size: 100px;
+    padding: 50px 15px 20px 30px;
 }
 .right{
-  margin-left: 0.4rem;
+    background-color: #f5fafe;
+    max-height: 100vh;
+    min-width: 50vw;
+    padding: 20px 10px 20px 10px;
 }
-.right-service{
-  margin-top: 125px;
-}
-.hero{
-  display: flex;
-  padding-left: 30px;
-  
+.smallleft{
+    font-size: 30px;
+    color: grey;
+    padding-top: 40px
+  }
+.top-end-img{
+    width: 690px;
+    height: 660px;
+    
 }
 .box{
-  min-width: 28vw;
-  min-height: 20vh;
-  background-color:grey;
-  font-size: 2.5rem;
-  margin: 10px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  text-decoration: none;
-}
-a{
-  text-decoration: none;
-}
-.box:hover{
-  color:#f5fafe;
-  background:#3b50df;
-  text-decoration: none;
-}
-
-/* ===========================================
-Responsive Codes 
-======================================= */
-
-/* 980px  */
-@media (max-width: 1080px) {
-  .mobile-navbar-btn {
-    display: block;
-    z-index: 999;
-    border: 3px solid #212529;
-    color: #212529;
-  }
-
-  .header {
-    position: relative;
-  }
-
-  .header .logo {
-    width: 40%;
-  }
-
-  .navbar {
-    width: 100%;
-    height: 100vh;
-    background: #e7f5ff;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: flex;
+    min-width: 40px;
+    min-height: 60px;
+    background-color:grey;
+    font-size: 20px;
+    margin: 10px;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-
-    
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    display: flex;
+    text-decoration: none;
   }
-
-  .navbar-list {
-    flex-direction: column;
-    align-items: center;
+  a{
+    text-decoration: none;
   }
-
-  .active .navbar {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-  .section-hero p,
- .section-services p {
-  font-size: 2.5rem;
+  a:hover,
+  a:visited{
+    color: #3b50df;
 }
-  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
-    display: block;
+  .box:hover{
+    color:#f5fafe;
+    background:#3b50df;
+    text-decoration: none;
   }
-
-  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
-    display: none;
-  }
+  
+.container2 {
+  padding: 65px 0;
+  background-color: #f5fafe;
+  height: 90vh;
+  padding: 0 44px;
+  display: flex;
+  align-items: center;
 }
-@media (max-width: 35em) {
-  .header {
-    padding: 0 2.4rem;
-  }
-
-  .header .logo {
-    width: 60%;
-  }
+.left-service{
+    max-width: 50vw;
+    min-height: 50vh;
+    font-size: 40px;
+    font-weight: 300px;
 }
