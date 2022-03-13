@@ -103,7 +103,7 @@ Hero and Service Section Start
   min-height: 70vh;
   font-size: 10rem;
   font-family: 'League Gothic', sans-serif;
-  
+  margin : 30px;
 }
 
 .smallleft{
@@ -211,4 +211,27 @@ Responsive Codes
   .header .logo {
     width: 60%;
   }
+}
+.chat{
+height: 8rem;
+width:  8rem ;
+position: fixed;
+right:-0.5em;
+top:57em ;
+cursor: pointer;
+}
+/* #botid{
+  display: none;
+} */
+
+.bot{
+  
+  width: 40em;
+  height:30em;
+  position: fixed;
+  top: 34.7em;
+  left: 86em;
+  border:2px solid blue;
+  border-radius: 1em;
+  opacity: 0.8;
 }
