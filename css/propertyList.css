@@ -6,7 +6,7 @@
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding:2%;
     align-items: center;
     /* border: #3b50df solid 1px; */
@@ -25,7 +25,7 @@ ul{
     align-self: flex-start;
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 ul li{
@@ -33,7 +33,7 @@ ul li{
     /* padding:5%; */
     display: flex;
     justify-content: space-around;
-    padding:2% 15px;
+    padding:2% 5%;
 }
 
 #gry{
@@ -42,24 +42,25 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 #signout{
     text-decoration: none;
     background-color: #3b50df;
+    font-size: 1.5rem;
     color: #fff;
-    padding: 10px;
-    height: 35px;
-    width: 83px;
+    padding: 10px 15px;
+    height: auto;
+    width: auto;
     border-radius: 4px;
     text-align: center;
 }
  
 div.section1, div.section2{
-    padding: 5% 10%;
-    width:80%;
+    padding: 5% 10% 3%;
+    width:100%;
 }
 
 div.section1 h2,div.section2 h2#gry{
@@ -113,25 +114,39 @@ div.block1 div.belowimage div.withsmall p{
     font-weight: bolder;
 }
 
-@media only screen and (max-width: 600px) {
-    nav ul{
-        display: none;
-    }
 
-    div.blocks{
-        display: flex;
-        flex-direction: column;
-    }
-  }
  .bot{
     
       height: 18em;
       width: 25em;
       position: fixed;
-      top: 22.5em;
-      left: 54em;
+      bottom: 0;
+      right: 0;
       border:2px solid blue;
       border-radius: 1em;
       opacity: 0.9; 
     }
+    @media only screen and (max-width: 1022px) {
+        nav ul{
+            display: none;
+        }
+    }
+
  
+    @media only screen and (max-width: 600px) {
+       
+        div.section1, div.section2{
+            padding: 5% 5%;
+            width:100%;
+        }
+    
+        div.blocks{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bot{
+            height: 10em;
+            width: 14em;
+        }
+      }
