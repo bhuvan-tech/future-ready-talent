@@ -132,6 +132,20 @@ div.block1 div.belowimage div.withsmall p{
         }
     }
 
+    @media only screen and (max-width: 372px) {
+        div.section1, div.section2{
+            width:auto;
+        }
+        div.block1{
+            width: auto;
+        }
+        div.block1 img{
+            height: auto;
+            width: 200px;
+            /* height: 100%;
+            width: 100%; */
+        }
+    }
  
     @media only screen and (max-width: 600px) {
        
