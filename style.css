@@ -56,19 +56,7 @@ li:visited{
     display: flex;
 }
 .left{
-
-  max-width: 50vw;
-  background: #f5fafe;
-  min-height: 70vh;
-  font-size: 10rem;
-  font-family: 'League Gothic', sans-serif;
-  margin : 30px;
-}
-
-.smallleft{
-  font-size: 2.3rem;
-  color: grey;
-  padding-top: 0.5rem;  
+    
     background: #f5fafe;
     font-family: 'League Gothic', sans-serif;
     min-height: 100vh;
@@ -130,15 +118,3 @@ li:visited{
     font-size: 40px;
     font-weight: 300px;
 }
-
-@media (max-width: 35em) {
-  .header {
-    padding: 0 2.4rem;
-  }
-
-  .header .logo {
-    width: 60%;
-  }
-}
-
-
