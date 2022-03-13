@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>B_Card</title>
+    <!-- <link rel="stylesheet" href="/style.css" -->
+</head>
+
+
+<style>
+    .card {
+        display: flex;
+        position: relative;
+        height: 460px;
+        width: 300px;
+        background-color: #ecf0f1;
+        margin: 60px auto;
+    }
+    
+    .header1 {
+        position: absolute;
+        height: 220px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-image: linear-gradient(to right, #1dd1a1, #1abc9c);
+    }
+    
+    .header1 img {
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        left: 90px;
+        top: 22px;
+    }
+    
+    .header1 h3 {
+        position: absolute;
+        font-family: sans-serif;
+        color: white;
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        top: 118px;
+        left: 90px;
+    }
+    
+    .header1 p {
+        position: absolute;
+        font-family: sans-serif;
+        color: rgb(236, 233, 233);
+        font-size: 13px;
+        top: 166px;
+        left: 90px
+    }
+    
+    .body1 {
+        display: inline-block;
+        position: absolute;
+        height: 126px;
+        left: 5px;
+        right: 5px;
+        top: 52%;
+        background-color: lightgray;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .body1 ul {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
+    
+    .body1 ul li {
+        position: absolute;
+        list-style: none;
+        display: block;
+        height: 40px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        transition: all .3s ease-in-out;
+    }
+    
+    .body1 ul li p,
+    h3,
+    i {
+        position: absolute;
+    }
+    
+    .body1 ul li h3 {
+        top: -17px;
+        left: 58px;
+        color: #576574;
+    }
+    
+    .body1 ul li p {
+        top: 14px;
+        left: 59px;
+        font-size: 12px;
+        font-family: sans-serif;
+        color: #576574;
+    }
+    
+    .body1 ul li i {
+        left: 8px;
+        top: 7px;
+        color: #16a085;
+        font-size: 26px;
+    }
+    
+    .body1 ul li:nth-child(1) {
+        top: -16px;
+    }
+    
+    .body1 ul li:nth-child(2) {
+        top: 26px;
+    }
+    
+    .body1 ul li:nth-child(3) {
+        top: 68px;
+    }
+    
+    .body ul li:nth-child(1) i {
+        left: 12px;
+    }
+    
+    .body1 li:hover {
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+    /*footer1*/
+    
+    .footer1 {
+        position: absolute;
+        height: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to right, #e2e1e1, #ecf0f1);
+    }
+    
+    .footer1 ul {
+        position: absolute;
+        left: -60px;
+    }
+    
+    .footer1 ul li {
+        display: inline-block;
+        margin-left: 60px;
+    }
+    
+    .footer1 ul li i {
+        font-size: 30px;
+        color: #7f8c8d;
+        transition: all .3s ease-in;
+    }
+    
+    .footer1 ul li:hover i {
+        transform: scale(0.9);
+        color: #1dd1a1;
+        cursor: pointer;
+        border-bottom: 2px solid #1dd1a1;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav a{
+        text-decoration: none;
+    }
+    .ele li{
+        display: flex;
+        padding-left: 15px;
+    }
+    
+</style>
+
+<body>
+    <!-- <nav class="navbar">
+        <div class="logo">
+            Housing Needs
+        </div>
+        <ul>
+            <li><a href="/index.html"> Home</a></li>
+            <li><a href=""> Agent</a></li>
+            <li><a href="./service.html"> Services</a></li>
+            <li><a href=""> Why us</a></li>
+            <li><a href=""> Sign-in</a></li>
+        </ul>
+    </nav> -->
+    
+    <div class="card">
+        <div class="header1">
+            <!-- <img src="./img/mobiledev1.jpg"> -->
+            <h3>Bhanu</h3>
+            <p>Property Manager</p>
+        </div>
+
+        <div class="body1">
+            <ul>
+                <li>
+                    <h3>9535561217</h3>
+                    <p>Mobile number</p>
+                    <i class="fas fa-mobile-alt"></i>
+                </li>
+                <li>
+                    <h3>bhanu@gmail.com</h3>
+                    <p>Email address</p>
+                    <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                    <h3>www.bhanu.com</h3>
+                    <p>Website address</p>
+                    <i class="fas fa-globe-americas"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer1">
+            <ul>
+                <li>
+                    <i class="fab fa-facebook-f"></i>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin-in"></i>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="header1">
+            
+            <h3>Arun</h3>
+            <p>Property Manager</p>
+        </div>
+
+        <div class="body1">
+            <ul>
+                <li>
+                    <h3>9535561319</h3>
+                    <p>Mobile number</p>
+                    <i class="fas fa-mobile-alt"></i>
+                </li>
+                <li>
+                    <h3>arun@gmail.com</h3>
+                    <p>Email address</p>
+                    <i class="fas fa-envelope"></i>
+                </li>
+                <li>
+                    <h3>www.arun.com</h3>
+                    <p>Website address</p>
+                    <i class="fas fa-globe-americas"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer1">
+            <ul>
+                <li>
+                    <i class="fab fa-facebook-f"></i>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin-in"></i>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

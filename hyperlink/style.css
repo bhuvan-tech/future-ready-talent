@@ -13,3 +13,8 @@ ol li{
     color: grey;
 }
 
+p{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 55px;
+    padding: 15px;
+}
