@@ -5,21 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <title>B_Card</title>
-    <!-- <link rel="stylesheet" href="/style.css" -->
+
+    <title>Our Agents</title>
 </head>
 
 
 <style>
+    @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+    body {
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        min-height: 5vh;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 15px;
+        font-family: "Work Sans", sans-serif;
+        background-color: #f5fafe;
+    }
+
+    .logo {
+        color: #3b50df;
+        font-weight: 550;
+        padding-left: 10px;
+    }
+
+    ul {
+        display: inline;
+        list-style: none;
+        margin: 0 20px;
+
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 20px;
+
+    }
+
+    li a {
+        text-decoration: none;
+    }
+
+    li a:visited {
+        color: #000;
+        transition: all 0.3s;
+    }
+
+
+    li a:hover,
+    li:visited {
+        color: #3b50df;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
     .card {
         display: flex;
         position: relative;
-        height: 460px;
-        width: 300px;
+        height: 472px;
+        width: 342px;
         background-color: #ecf0f1;
-        margin: 60px auto;
+        margin: 40px auto;
     }
-    
+
     .header1 {
         position: absolute;
         height: 220px;
@@ -28,7 +85,7 @@
         top: 0;
         background-image: linear-gradient(to right, #1dd1a1, #1abc9c);
     }
-    
+
     .header1 img {
         position: absolute;
         height: 120px;
@@ -37,7 +94,7 @@
         left: 90px;
         top: 22px;
     }
-    
+
     .header1 h3 {
         position: absolute;
         font-family: sans-serif;
@@ -45,30 +102,29 @@
         font-size: 26px;
         font-weight: 600;
         letter-spacing: 1px;
-        top: 118px;
-        left: 90px;
+        top: 120px;
+        left: 59px;
     }
-    
+
     .header1 p {
         position: absolute;
         font-family: sans-serif;
         color: rgb(236, 233, 233);
         font-size: 13px;
         top: 166px;
-        left: 90px
+        left: 60px
     }
-    
+
     .body1 {
         display: inline-block;
         position: absolute;
-        height: 126px;
-        left: 5px;
-        right: 5px;
-        top: 52%;
-        background-color: lightgray;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* height: 126px; */
+        left: -14px;
+        right: 25px;
+        top: 55%;
+
     }
-    
+
     .body1 ul {
         position: absolute;
         left: 0;
@@ -76,7 +132,7 @@
         right: 0;
         top: 0;
     }
-    
+
     .body1 ul li {
         position: absolute;
         list-style: none;
@@ -88,19 +144,19 @@
         background-color: white;
         transition: all .3s ease-in-out;
     }
-    
+
     .body1 ul li p,
     h3,
     i {
         position: absolute;
     }
-    
+
     .body1 ul li h3 {
         top: -17px;
         left: 58px;
         color: #576574;
     }
-    
+
     .body1 ul li p {
         top: 14px;
         left: 59px;
@@ -108,83 +164,89 @@
         font-family: sans-serif;
         color: #576574;
     }
-    
+
     .body1 ul li i {
         left: 8px;
         top: 7px;
         color: #16a085;
         font-size: 26px;
     }
-    
+
     .body1 ul li:nth-child(1) {
         top: -16px;
     }
-    
+
     .body1 ul li:nth-child(2) {
         top: 26px;
     }
-    
+
     .body1 ul li:nth-child(3) {
         top: 68px;
     }
-    
+
     .body ul li:nth-child(1) i {
         left: 12px;
     }
-    
+
     .body1 li:hover {
         background-color: whitesmoke;
         cursor: pointer;
     }
+
     /*footer1*/
-    
+
     .footer1 {
         position: absolute;
-        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        height: 91px;
         bottom: 0;
-        left: 0;
-        right: 0;
-        background-image: linear-gradient(to right, #e2e1e1, #ecf0f1);
+        left: -31px;
+        right: -1px;
+        /* background-image: linear-gradient(to right, #e2e1e1, #ecf0f1); */
     }
-    
+
     .footer1 ul {
         position: absolute;
         left: -60px;
     }
-    
+
     .footer1 ul li {
         display: inline-block;
         margin-left: 60px;
     }
-    
+
     .footer1 ul li i {
         font-size: 30px;
         color: #7f8c8d;
         transition: all .3s ease-in;
     }
-    
+
     .footer1 ul li:hover i {
         transform: scale(0.9);
         color: #1dd1a1;
         cursor: pointer;
         border-bottom: 2px solid #1dd1a1;
     }
-    .nav{
+
+    .nav {
         display: flex;
         justify-content: space-between;
     }
-    .nav a{
+
+    .nav a {
         text-decoration: none;
     }
-    .ele li{
+
+    .ele li {
         display: flex;
         padding-left: 15px;
     }
-    
 </style>
 
 <body>
-    <!-- <nav class="navbar">
+    <nav class="navbar">
         <div class="logo">
             Housing Needs
         </div>
@@ -195,97 +257,98 @@
             <li><a href=""> Why us</a></li>
             <li><a href=""> Sign-in</a></li>
         </ul>
-    </nav> -->
-    
-    <div class="card">
-        <div class="header1">
-            <!-- <img src="./img/mobiledev1.jpg"> -->
-            <h3>Bhanu</h3>
-            <p>Property Manager</p>
-        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="header1">
+                <!-- <img src="./img/mobiledev1.jpg"> -->
+                <h3>Bhanu Prakash</h3>
+                <p>Property Manager</p>
+            </div>
 
-        <div class="body1">
-            <ul>
-                <li>
-                    <h3>9535561217</h3>
-                    <p>Mobile number</p>
-                    <i class="fas fa-mobile-alt"></i>
-                </li>
-                <li>
-                    <h3>bhanu@gmail.com</h3>
-                    <p>Email address</p>
-                    <i class="fas fa-envelope"></i>
-                </li>
-                <li>
-                    <h3>www.bhanu.com</h3>
-                    <p>Website address</p>
-                    <i class="fas fa-globe-americas"></i>
-                </li>
-            </ul>
-        </div>
+            <div class="body1">
+                <ul>
+                    <li>
+                        <h3>9535561217</h3>
+                        <p>Mobile number</p>
+                        <i class="fas fa-mobile-alt"></i>
+                    </li>
+                    <li>
+                        <h3>bhanu@gmail.com</h3>
+                        <p>Email address</p>
+                        <i class="fas fa-envelope"></i>
+                    </li>
+                    <li>
+                        <h3>www.bhanu.com</h3>
+                        <p>Website address</p>
+                        <i class="fas fa-globe-americas"></i>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="footer1">
-            <ul>
-                <li>
-                    <i class="fab fa-facebook-f"></i>
-                </li>
-                <li>
-                    <i class="fab fa-twitter"></i>
-                </li>
-                <li>
-                    <i class="fab fa-instagram"></i>
-                </li>
-                <li>
-                    <i class="fab fa-linkedin-in"></i>
-                </li>
-            </ul>
-        </div>
+            <div class="footer1">
+                <ul>
+                    <li>
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin-in"></i>
+                    </li>
+                </ul>
+            </div>
 
-    </div>
-    <div class="card">
-        <div class="header1">
-            
-            <h3>Arun</h3>
-            <p>Property Manager</p>
         </div>
+        <div class="card">
+            <div class="header1">
 
-        <div class="body1">
-            <ul>
-                <li>
-                    <h3>9535561319</h3>
-                    <p>Mobile number</p>
-                    <i class="fas fa-mobile-alt"></i>
-                </li>
-                <li>
-                    <h3>arun@gmail.com</h3>
-                    <p>Email address</p>
-                    <i class="fas fa-envelope"></i>
-                </li>
-                <li>
-                    <h3>www.arun.com</h3>
-                    <p>Website address</p>
-                    <i class="fas fa-globe-americas"></i>
-                </li>
-            </ul>
+                <h3>Arun Jenson</h3>
+                <p>Property Manager</p>
+            </div>
+
+            <div class="body1">
+                <ul>
+                    <li>
+                        <h3>9686105832</h3>
+                        <p>Mobile number</p>
+                        <i class="fas fa-mobile-alt"></i>
+                    </li>
+                    <li>
+                        <h3>jensonarun8@gmail.com</h3>
+                        <p>Email address</p>
+                        <i class="fas fa-envelope"></i>
+                    </li>
+                    <li>
+                        <h3>www.arun.com</h3>
+                        <p>Website address</p>
+                        <i class="fas fa-globe-americas"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer1">
+                <ul>
+                    <li>
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin-in"></i>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-
-        <div class="footer1">
-            <ul>
-                <li>
-                    <i class="fab fa-facebook-f"></i>
-                </li>
-                <li>
-                    <i class="fab fa-twitter"></i>
-                </li>
-                <li>
-                    <i class="fab fa-instagram"></i>
-                </li>
-                <li>
-                    <i class="fab fa-linkedin-in"></i>
-                </li>
-            </ul>
-        </div>
-
     </div>
 
 </body>
