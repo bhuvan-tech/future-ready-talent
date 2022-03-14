@@ -15,6 +15,13 @@ ol li{
 
 p{
     font-family: 'League Gothic', sans-serif;
-    font-size: 55px;
-    padding: 15px;
+    font-size: 4em;
+    padding: 1em;
 }
+@media only screen and (max-width: 860px) {
+    .navbar{
+        display: flex;
+        align-items: center;
+        
+    }
+    }
