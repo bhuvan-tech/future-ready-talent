@@ -114,6 +114,11 @@
         width: 140px;
         border-radius: 2px;
     }
+
+    .predict {
+        margin-left: 134px;
+        font-size: 1.5em;
+    }
 </style>
 
 <nav class="navbar">
@@ -145,8 +150,8 @@
         <input type="text" id="bathroom" class="box" name="bathroom" placeholder="Enter number of Bathrooms "><br><br>
         <label for="tqsf" class="hd">Enter Total Square Feet:</label>&nbsp;
         <input type="text" id="tqsf" class="box4" name="tqsf" placeholder="Enter Sqft"><br><br>
-        <button onclick="send_data">Predict Price</button><br>
-        <h3><span id="prediction"></span></h3>
+        <button onclick="send_data()">Predict Price</button><br><br>
+        <h3><span id="prediction" class="predict"></span></h3>
     </form>
     <script>
         function form_handler(event) {
@@ -155,6 +160,21 @@
 
         function send_data() {
             document.querySelector('form').addEventListener("submit", form_handler);
+
+            var fd = new FormData(document.querySelector('form'));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('POST', '/predict', 'true');
+            document.getElementById('prediction').innerHTML = "Wait Predicting Price!....";
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    document.getElementById('prediction').innerHTML = "Predicted Price: ₹ " + xhr.responseText;
+                }
+            };
+
+            xhr.onload = function () { };
+            xhr.send(fd);
         }
     </script>
 </body>
