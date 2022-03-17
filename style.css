@@ -54,20 +54,21 @@ li:visited{
 }
 .container{
     display: flex;
+    width: 100%;
+    /* overflow-x: hidden; */
+    background: #f5fafe;
 }
 .left{
     
-    background: #f5fafe;
     font-family: 'League Gothic', sans-serif;
     min-height: 100vh;
     min-width: 50vw;
     font-size: 100px;
-    padding: 50px 15px 20px 30px;
+    padding: 50px 15px 20px 25px;
 }
 .right{
-    background-color: #f5fafe;
     max-height: 100vh;
-    min-width: 50vw;
+    /* min-width: 50vw; */
     padding: 20px 10px 20px 10px;
 }
 .smallleft{
@@ -76,8 +77,8 @@ li:visited{
     padding-top: 40px
   }
 .top-end-img{
-    width: 690px;
-    height: 660px;
+    width: 100%;
+    height: 100%;
     
 }
 .box{
@@ -117,4 +118,10 @@ li:visited{
     min-height: 50vh;
     font-size: 40px;
     font-weight: 300px;
+}
+
+@media only screen and (max-width: 1022px) {
+    nav ul{
+        display: none;
+    }
 }
