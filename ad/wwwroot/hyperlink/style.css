@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Luxurious+Roman&display=swap');
+.heading{
+    font-size: 40px;
+    font-family: 'League Gothic', sans-serif;
+    padding: 15px 0;
+    color: burlywood;
+}
+.heading:hover{
+    color: #3b50df;
+}
+ol li{
+    font-size: 25px;
+    color: grey;
+}
+
+p{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 4em;
+    padding: 1em;
+}
+@media only screen and (max-width: 860px) {
+    .navbar{
+        display: flex;
+        align-items: center;
+        
+    }
+    }
