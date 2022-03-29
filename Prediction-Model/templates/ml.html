@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House_price_prediction</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+    body {
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        min-height: 5vh;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 15px;
+        font-family: "Work Sans", sans-serif;
+        background-color: #f5fafe;
+    }
+
+    .logo {
+        color: #3b50df;
+        font-weight: 550;
+        padding-left: 10px;
+    }
+
+    ul {
+        display: inline;
+        list-style: none;
+        margin: 0 20px;
+
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 20px;
+
+    }
+
+    li a {
+        text-decoration: none;
+    }
+
+    li a:visited {
+        color: #000;
+        transition: all 0.3s;
+    }
+
+
+    li a:hover,
+    li:visited {
+        color: #3b50df;
+    }
+
+    .form {
+        height: 500px;
+        width: 700px;
+        margin-top: 80px;
+        position: relative;
+        margin-left: 302px;
+        background: skyblue;
+        opacity: .9;
+        border-radius: 20px;
+    }
+
+    h1 {
+        margin-left: 170px;
+    }
+
+    .box {
+        border-radius: 8px;
+        height: 27px;
+        width: 324px;
+        margin-left: 10px;
+    }
+
+    .box4 {
+        border-radius: 8px;
+        height: 27px;
+        width: 324px;
+        margin-left: 47px;
+    }
+
+    .box1 {
+        border-radius: 8px;
+        height: 31px;
+        width: 331px;
+        margin-left: 82px;
+    }
+
+    .box2 {
+        border-radius: 8px;
+        height: 27px;
+        width: 324px;
+        margin-left: 150px;
+    }
+
+    .hd {
+        margin-left: 30px;
+    }
+
+    button {
+        text-align: center;
+        margin-left: 257px;
+        height: 45px;
+        width: 140px;
+        border-radius: 2px;
+    }
+
+    .predict {
+        margin-left: 134px;
+        font-size: 1.5em;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .footer {
+            margin-left: 518px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .navbar {
+                display: none;
+            }
+
+            .form {
+                height: 600px;
+                width: 500px;
+                margin: auto;
+                position: relative;
+                background: skyblue;
+                opacity: .9;
+                border-radius: 2px;
+            }
+
+            h1 {
+                text-align: center;
+                margin-left: 0px;
+            }
+
+            .hd {
+                margin-left: 10px;
+            }
+
+            .box1 {
+                border-radius: 2px;
+                height: 25px;
+                width: 284px;
+                margin-left: 10px;
+            }
+
+            .box2 {
+                border-radius: 2px;
+                height: 25px;
+                width: 275px;
+                margin-left: 78px;
+            }
+
+            .box {
+                border-radius: 2px;
+                height: 25px;
+                width: 201px;
+                margin-left: 10px;
+            }
+
+            .box4 {
+                border-radius: 2px;
+                height: 25px;
+                width: 237px;
+                margin-left: 10px;
+            }
+
+            button {
+                text-align: center;
+                margin-left: 183px;
+                height: 35px;
+                width: 100px;
+                border-radius: 2px;
+            }
+
+            .predict {
+                margin-left: 96px;
+                font-size: 1.0em;
+            }
+
+            .footer {
+                margin-left: 103px;
+            }
+        }
+    }
+</style>
+
+<nav class="navbar">
+    <div class="logo">
+        Housing Needs
+    </div>
+    <ul>
+        <li><a href="/index.html"> Home</a></li>
+        <li><a href="https://brave-pebble-047872910.1.azurestaticapps.net/hyperlink/agent.html"> Agent</a></li>
+        <li><a href="https://brave-pebble-047872910.1.azurestaticapps.net/hyperlink/service.html"> Services</a></li>
+        <li><a href="https://brave-pebble-047872910.1.azurestaticapps.net/hyperlink/whyus.html"> Why us</a></li>
+
+    </ul>
+</nav>
+
+<body>
+    <form method="post" class="form" accept-charset="utf-8">
+        <br>
+        <h1>House Price Predictior</h1>
+        <label for="location" class="hd">Select the location:</label>&nbsp;
+        <select id="location" class="box1" name="location">
+            {% for location in locations %}
+            <option value="{{location}}">{{location}}</option>
+            {% endfor %}
+        </select><br><br>
+        <label for="bhk" class="hd">Enter BHK:</label>&nbsp;
+        <input type="text" id="bhk" class="box2" name="bhk" placeholder="Enter BHK"><br><br>
+        <label for="bathroom" class="hd"> Enter Number of Bathrooms:</label>&nbsp;
+        <input type="text" id="bathroom" class="box" name="bathroom" placeholder="Enter number of Bathrooms "><br><br>
+        <label for="tqsf" class="hd">Enter Total Square Feet:</label>&nbsp;
+        <input type="text" id="tqsf" class="box4" name="tqsf" placeholder="Enter Sqft"><br><br>
+        <button onclick="send_data()">Predict Price</button><br><br>
+        <h3><span id="prediction" class="predict"></span></h3>
+    </form>
+    <script>
+        function form_handler(event) {
+            event.preventDefault();
+        }
+
+        function send_data() {
+            document.querySelector('form').addEventListener("submit", form_handler);
+
+            var fd = new FormData(document.querySelector('form'));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('POST', '/predict', 'true');
+            document.getElementById('prediction').innerHTML = "Wait Predicting Price!....";
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    document.getElementById('prediction').innerHTML = "Predicted Price: ₹ " + xhr.responseText;
+                }
+            };
+
+            xhr.onload = function () { };
+            xhr.send(fd);
+        }
+    </script>
+</body>
+<footer class="footer">Copyright 2022 Housingneeds</footer>
+
+</html>
