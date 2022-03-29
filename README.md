@@ -10,9 +10,11 @@ Microsoft Azure Services :
 
 ∙ Azure Active Directory 
 
-∙ Azure 
+∙ Azure App Service
 
-∙ Azure
+∙ Azure Bot Service
+
+∙ Azure Machine Learning
 
 # Azure Active Directory
   Azure Active Directory (Azure AD) is a cloud-based identity and access management service. We have used to AAD to authenticate user into our website. With the use of AAD, we don't need to maintain a Database-management-system. We have created this using ASP.net and deployed in the azure. To view the File, Please view ad folder in th e git-repository.  
