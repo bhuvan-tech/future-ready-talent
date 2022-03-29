@@ -18,6 +18,8 @@ Microsoft Azure Services :
 
 ∙ Azure Machine Learning
 
+. Azure Cognitive Services
+
 # Azure Active Directory
   Azure Active Directory (Azure AD) is a cloud-based identity and access management service. We have used to AAD to authenticate user into our website. With the use of AAD, we don't need to maintain a Database-management-system. We have created this using ASP.net and deployed in the azure. To view the File, Please view ad folder in th e git-repository.  
   
@@ -32,9 +34,12 @@ Microsoft Azure Services :
     Azure Bot Service is a enterprise-grade, natural conversation converter which used to give responses for a particular question. We have created a bot which used to solve the customer question.
     
   ------------------
-    
+ # Azure Machine Learning   
+    Azure Machine Learning is a cloud service for accelerating and managing the machine learning project lifecycle. Machine learning professionals, data scientists, and engineers can use it in their day-to-day workflows: Train and deploy models, and manage MLOps.
 
-      
+ # Azure Cognitive Services
+    Azure Cognitive Services are cloud-based artificial intelligence (AI) services that help you build cognitive intelligence into your applications. They are available as REST APIs, client library SDKs, and user interfaces. You can add cognitive features to your applications without having AI or data science skills. Cognitive Services enable you to build cognitive solutions that can see, hear, speak, understand, and even make decisions.
+    QnA Maker => QnA Maker allows you to build a question and answer service from your semi-structured content.
  
 
 
