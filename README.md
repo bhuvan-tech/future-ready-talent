@@ -21,6 +21,8 @@ Microsoft Azure Services :
   
 ------------------
   
+# Azure App Service
+   App Service supports various versions of .NET apps, and provides a highly scalable, self-patching web hosting service. ASP.NET web apps are cross-platform and can be hosted on Linux or Windows. When you're finished, you'll have an Azure resource group consisting of an App Service hosting plan and an App Service with a deployed web application. We hosted web-app using Azure App Service because it is easy to deploy and publish.
   
 
 
