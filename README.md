@@ -1,11 +1,12 @@
 # future-ready-talent
 
 # Housing-Needs
+------------------
   It is a Web-App which to used for Buying, Rent, Selling of house and commerical property. The Site contains a House Prediction Price system and BOT which can be used for handling any user request.
   
   
 Microsoft Azure Services :
-∙ Azure Active Directory
+∙ Azure Active Directory 
 ∙ 
 ∙ 
 
