@@ -31,14 +31,14 @@ Microsoft Azure Services :
  ------------------
  
  #  Azure Bot Service
-    Azure Bot Service is a enterprise-grade, natural conversation converter which used to give responses for a particular question. We have created a bot which used to solve the customer question.
+   Azure Bot Service is a enterprise-grade, natural conversation converter which used to give responses for a particular question. We have created a bot which used to solve the customer question.
     
   ------------------
  # Azure Machine Learning   
-    Azure Machine Learning is a cloud service for accelerating and managing the machine learning project lifecycle. Machine learning professionals, data scientists, and engineers can use it in their day-to-day workflows: Train and deploy models, and manage MLOps.
+   Azure Machine Learning is a cloud service for accelerating and managing the machine learning project lifecycle. Machine learning professionals, data scientists, and engineers can use it in their day-to-day workflows: Train and deploy models, and manage MLOps.
 
  # Azure Cognitive Services
-    Azure Cognitive Services are cloud-based artificial intelligence (AI) services that help you build cognitive intelligence into your applications. They are available as REST APIs, client library SDKs, and user interfaces. You can add cognitive features to your applications without having AI or data science skills. Cognitive Services enable you to build cognitive solutions that can see, hear, speak, understand, and even make decisions.
+   Azure Cognitive Services are cloud-based artificial intelligence (AI) services that help you build cognitive intelligence into your applications. They are available as REST APIs, client library SDKs, and user interfaces. You can add cognitive features to your applications without having AI or data science skills. Cognitive Services enable you to build cognitive solutions that can see, hear, speak, understand, and even make decisions.
     QnA Maker => QnA Maker allows you to build a question and answer service from your semi-structured content.
  
 
